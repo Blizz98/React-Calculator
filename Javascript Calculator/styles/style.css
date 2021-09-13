@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: fantasy;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(83, 83, 83);
+}
+
+#signature {
+  color: #ffffff;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 5px 5px 5px #000000;
+}
+
+#heading {
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#calculator {
+  background: linear-gradient(90deg, #000000, #3f3f3f);
+  min-width: 350px;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border: ridge 4px #ffffff;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+#display {
+  width: 80%;
+  height: 70px;
+  text-align: end;
+  margin-bottom: 20px;
+  padding: 0 10% 0 0;
+  background-color: darkgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#upper-display {
+  color: goldenrod;
+}
+
+#lower-display {
+  color: white;
+  font-size: 2rem;
+}
+
+#buttons {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-areas:
+    "A A B C"
+    "D E F G"
+    "H I J K"
+    "L M N O"
+    "P P Q O";
+  width: 90%;
+  padding-bottom: 5%;
+}
+
+.button {
+  height: 70px;
+  width: 100%;
+  font-size: 1.2rem;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button:hover {
+  outline: 1px solid white;
+}
+
+#seven {
+  background-color: #383838;
+}
+#eight {
+  background-color: #383838;
+}
+#nine {
+  background-color: #383838;
+}
+#four {
+  background-color: #383838;
+}
+#five {
+  background-color: #383838;
+}
+#six {
+  background-color: #383838;
+}
+#one {
+  background-color: #383838;
+}
+#two {
+  background-color: #383838;
+}
+#three {
+  background-color: #383838;
+}
+#zero {
+  grid-area: P;
+  background-color: #383838;
+}
+#decimal {
+  background-color: #383838;
+}
+
+#clear {
+  grid-area: A;
+  background-color: crimson;
+}
+#divide {
+  background-color: gray;
+}
+#multiply {
+  background-color: gray;
+}
+#subtract {
+  background-color: gray;
+}
+#add {
+  background-color: gray;
+}
+
+#equals {
+  grid-area: O;
+  height: 100%;
+  background-color: royalblue;
+}
